@@ -1,0 +1,31 @@
+menu:
+  Archives: /archives
+#footer_links/links
+footer_links:
+#- name: Kieran
+#  link: http://go.kieran.top/
+#- name: Name
+#  link: http://domain.com/
+color: "#003366"
+widgets:
+- search
+- recent_posts
+- category
+- tagcloud
+
+excerpt_link: Read More ›
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+google_analytics:
