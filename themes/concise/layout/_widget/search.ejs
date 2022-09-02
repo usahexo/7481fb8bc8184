@@ -1,0 +1,16 @@
+<div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="<%= __('search') %>">
+    <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+  </form>
+</div>
+<div class="search-link">
+<% if (theme.links && theme.links.length){ %>
+              <ul>
+                    <% theme.links.forEach(function(item){ %>
+                    <li><a href="<%- item.link %>" class="animsition-link"><%= item.name %></a></li>
+                    <% }); %>
+                
+            </ul>
+            <% } %>
+</div>
