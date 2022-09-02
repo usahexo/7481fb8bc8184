@@ -1,0 +1,16 @@
+<div class="alignleft">
+  <% if (config.author){ %>
+  &copy; <%= new Date().getFullYear() %> <%= config.author %>
+  <% } else { %>
+  &copy; <%= new Date().getFullYear() %> <%= config.title %>
+  <% } %>
+  
+  <% if (theme.footer_links && theme.footer_links.length){ %>
+                    <% theme.footer_links.forEach(function(item){ %>
+                    <a href="<%- item.link %>" class="animsition-link"><%= item.name %> | </a>
+                    <% }); %>
+                
+            
+            <% } %>
+</div>
+<div class="clearfix"></div>
